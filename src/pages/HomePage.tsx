@@ -11,7 +11,6 @@ import { StatsBand } from '../components/sections/StatsBand';
 import { ServicesNumberedGrid } from '../components/sections/ServicesNumberedGrid';
 import { MasonryGallery } from '../components/sections/MasonryGallery';
 import { ProcessTimeline } from '../components/sections/ProcessTimeline';
-import { LocationsCards } from '../components/sections/LocationsCards';
 import { MultiStepQuoteForm } from '../components/sections/MultiStepQuoteForm';
 
 export const HomePage: React.FC = () => {
@@ -21,81 +20,81 @@ export const HomePage: React.FC = () => {
   const servicesRef = useScrollReveal<HTMLDivElement>();
   const galleryRef = useScrollReveal<HTMLDivElement>();
   const processRef = useScrollReveal<HTMLDivElement>();
-  const locationsRef = useScrollReveal<HTMLDivElement>();
   const quoteRef = useScrollReveal<HTMLDivElement>();
   const closingCtaRef = useScrollReveal<HTMLDivElement>();
 
   return (
     <div className="relative overflow-hidden bg-white text-[#220A3D]">
       {/* =========================================================================
-          1. HERO SECTION (White and Violet Theme, No Black, No Gold, No Blinking Badge)
+          1. HERO SECTION (High Definition Imagery, White & Violet Luxury)
           ========================================================================= */}
-      <section className="relative h-[100svh] min-h-[640px] flex flex-col justify-end lg:justify-center overflow-hidden pb-8 sm:pb-12 pt-24 bg-[#FAF5FE]">
-        {/* Background Image with Luminous White & Soft Violet Luxury Overlay */}
+      <section className="relative min-h-[100svh] flex flex-col justify-center overflow-hidden pb-10 sm:pb-14 pt-28 sm:pt-32 bg-[#FAF5FE]">
+        {/* Crystal-Clear 4K Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85"
-            alt="Scénographie d'exception Tesa Gancia"
+            src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2560&q=95"
+            alt="Scénographie d'exception et réceptions de prestige Tesa Gancia"
             fetchPriority="high"
             decoding="sync"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center transform scale-100"
           />
-          {/* Luminous White & Violet Gradient (No black) */}
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/85 to-white/60" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(250,245,254,0.85)_100%)]" />
+          {/* Luminous, non-destructive gradient overlay keeping image crisp & deep */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#FAF5FE] via-[#FAF5FE]/40 to-[#260C45]/20" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(250,245,254,0.45)_100%)]" />
         </div>
 
-        <Container className="relative z-10 w-full text-left lg:text-center flex flex-col items-start lg:items-center max-w-4xl px-6 sm:px-8">
-          {/* Fluid H1 with Violet Gradient (No blinking line/badge as explicitly instructed) */}
-          <h1 className="font-serif text-fluid-h1 font-normal tracking-tight text-[#260C45] mb-4 sm:mb-6">
-            {t.hero.titleLine1}{' '}
-            <span className="italic font-normal text-violet-gradient font-serif">
-              {t.hero.titleHighlight}
-            </span>{' '}
-            {t.hero.titleLine2}
-          </h1>
+        <Container className="relative z-10 w-full flex flex-col items-center max-w-4xl px-4 sm:px-6 my-auto">
+          {/* Frosted Glass Luxury Hero Box for maximum legibility and photographic impact */}
+          <div className="w-full bg-white/85 backdrop-blur-md p-6 sm:p-10 md:p-12 rounded-3xl border border-white/90 shadow-[0_20px_60px_rgba(123,44,191,0.08)] flex flex-col items-center text-center">
+            {/* Fluid H1 with Violet Gradient */}
+            <h1 className="font-serif text-fluid-h1 font-normal tracking-tight text-[#260C45] mb-4 sm:mb-6 leading-[1.08]">
+              {t.hero.titleLine1}{' '}
+              <span className="italic font-normal text-violet-gradient font-serif">
+                {t.hero.titleHighlight}
+              </span>{' '}
+              {t.hero.titleLine2}
+            </h1>
 
-          {/* 2-line Subline in refined high-contrast violet */}
-          <p className="font-sans text-sm sm:text-base md:text-lg text-[#32174D] max-w-2xl leading-relaxed mb-6 sm:mb-8 whitespace-pre-line font-medium">
-            {t.hero.subline}
-          </p>
+            {/* 2-line Subline in refined high-contrast violet */}
+            <p className="font-sans text-sm sm:text-base md:text-lg text-[#32174D] max-w-2xl leading-relaxed mb-6 sm:mb-8 whitespace-pre-line font-medium">
+              {t.hero.subline}
+            </p>
 
-          {/* Two CTAs in White & Violet */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-8 sm:mb-10">
-            <Button
-              to="/contact"
-              size="lg"
-              variant="primary"
-              className="w-full sm:w-auto"
-            >
-              {t.hero.ctaPrimary}
-            </Button>
+            {/* Two CTAs in White & Violet */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 w-full sm:w-auto">
+              <Button
+                to="/contact"
+                size="lg"
+                variant="primary"
+                className="w-full sm:w-auto shadow-md"
+              >
+                {t.hero.ctaPrimary}
+              </Button>
 
-            <Button
-              href="https://wa.me/237655493685"
-              external
-              size="lg"
-              variant="secondary"
-              className="w-full sm:w-auto bg-white/80 backdrop-blur-sm"
-            >
-              {t.hero.ctaSecondary}
-            </Button>
+              <Button
+                href="https://wa.me/237655493685"
+                external
+                size="lg"
+                variant="secondary"
+                className="w-full sm:w-auto bg-white/95 hover:bg-white text-[#260C45] border-[#D6BCFA] shadow-sm"
+              >
+                {t.hero.ctaSecondary}
+              </Button>
+            </div>
           </div>
 
           {/* Bottom Bar: Discreet row of Douala · Yaoundé · Bafoussam + Violet Scroll Indicator */}
-          <div className="w-full pt-6 flex items-center justify-between text-xs text-[#6C5B82] font-sans">
-            {/* Cities Row in Violet */}
-            <div className="tracking-[0.2em] uppercase text-[11px] text-[#7B2CBF] font-bold">
+          <div className="w-full pt-6 sm:pt-8 flex items-center justify-between text-xs text-[#6C5B82] font-sans px-2">
+            <div className="tracking-[0.2em] uppercase text-[11px] sm:text-xs text-[#7B2CBF] font-bold bg-white/70 backdrop-blur-xs px-3 py-1 rounded-full shadow-xs border border-white/80">
               {t.hero.citiesBar}
             </div>
 
-            {/* Scroll Indicator in Violet */}
             <a
               href="#editorial"
-              className="inline-flex items-center gap-2 text-[10px] sm:text-xs uppercase tracking-[0.18em] text-[#32174D] hover:text-[#7B2CBF] transition-colors font-semibold"
+              className="inline-flex items-center gap-2 text-[10px] sm:text-xs uppercase tracking-[0.18em] text-[#32174D] hover:text-[#7B2CBF] transition-colors font-semibold bg-white/70 backdrop-blur-xs px-3 py-1 rounded-full shadow-xs border border-white/80"
             >
               <span className="hidden sm:inline">{t.hero.scrollIndicator}</span>
-              <div className="w-4 h-7 border-2 border-[#7B2CBF] rounded-full flex items-start justify-center p-1">
+              <div className="w-4 h-7 border-2 border-[#7B2CBF] rounded-full flex items-start justify-center p-1 bg-white">
                 <div className="w-1.5 h-2 bg-[#7B2CBF] rounded-full animate-scroll-bounce" />
               </div>
             </a>
@@ -148,11 +147,12 @@ export const HomePage: React.FC = () => {
 
             {/* Right Column: Tall Image Offset */}
             <div className="lg:col-span-5 relative">
-              <div className="p-2 sm:p-3 bg-white border border-[#EADBFA] shadow-[0_12px_40px_rgba(123,44,191,0.08)] relative z-10 rounded-sm">
+              <div className="p-2 sm:p-3 bg-white border border-[#EADBFA] shadow-[0_12px_40px_rgba(123,44,191,0.08)] relative z-10 rounded-2xl overflow-hidden">
                 <LazyImage
-                  src="/images/services/real_event_decor_main.jpg"
-                  alt="Scénographie d'exception Tesa Gancia au Cameroun"
+                  src="/images/services/editorial_event_4k.jpg"
+                  alt="Scénographie d'exception et réceptions de prestige Tesa Gancia au Cameroun"
                   aspectRatio="3/4"
+                  className="rounded-xl"
                 />
               </div>
 
@@ -226,8 +226,8 @@ export const HomePage: React.FC = () => {
             />
           </div>
 
-          {/* Masonry Gallery with accessible Lightbox - Limited to 6 on Home */}
-          <MasonryGallery limit={6} />
+          {/* Masonry Gallery with accessible Lightbox - Curated 4 Stylish Cards */}
+          <MasonryGallery limit={4} />
 
           <div className="mt-12 text-center">
             <Button to="/portfolio" variant="primary" size="lg">
@@ -259,32 +259,6 @@ export const HomePage: React.FC = () => {
           </div>
 
           <ProcessTimeline />
-        </Container>
-      </section>
-
-      {/* =========================================================================
-          6. LOCATIONS SECTION (Douala, Yaoundé, Bafoussam)
-          ========================================================================= */}
-      <section
-        ref={locationsRef}
-        className="section-padding bg-white text-[#220A3D] relative"
-      >
-        <Container>
-          <div className="text-center mb-16">
-            <SectionLabel align="center" theme="light">
-              {t.locations.sectionLabel}
-            </SectionLabel>
-            <SectionHeading
-              title={t.locations.title}
-              highlight={t.locations.titleHighlight}
-              subtitle={t.locations.subtitle}
-              theme="light"
-              className="mt-4"
-            />
-          </div>
-
-          {/* 3 Premium Cards */}
-          <LocationsCards />
         </Container>
       </section>
 

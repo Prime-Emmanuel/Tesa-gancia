@@ -36,7 +36,7 @@ export const fr: Translations = {
       'Chaque décor est imaginé comme un chef-d’œuvre sur-mesure. Nous harmonisons le patrimoine culturel camerounais avec l’audace du design contemporain, orchestrant chaque détail avec une rigueur absolue.',
     stats: [
       { value: 450, suffix: '+', label: 'Événements d’Exception Célébrés' },
-      { value: 12, suffix: '+', label: 'Années d’Excellence & Maîtrise' },
+      { value: 6, suffix: '+', label: 'Années d’Expérience & Savoir-Faire' },
       { value: 3, suffix: '', label: 'Showrooms Déployés au Cameroun' },
       { value: 99, suffix: '%', label: 'Clients Émerveillés & Comblés' },
     ],
@@ -322,23 +322,13 @@ export const fr: Translations = {
     ],
     items: [
       {
-        id: 'g1',
-        title: 'Mise en Scène d’Exception',
-        category: 'decoration',
-        location: 'Douala, Cameroun',
-        year: '2025',
-        guests: 'Réception Privée',
-        image: 'https://i.ibb.co/PSSKJ4v/1000061221.jpg',
-        caption: 'Scénographie événementielle élégante mettant en avant notre palette signature violet et blanc.',
-      },
-      {
         id: 'g2',
         title: 'Boutique Cadeaux de Luxe',
         category: 'gifts',
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Nos Cadeaux',
-        image: 'https://i.ibb.co/LdzXQbf4/1000061236.jpg',
+        image: '/images/gallery/g2.jpg',
         caption: 'Coffrets cadeaux personnalisés sur-mesure pour vos célébrations prestigieuses.',
       },
       {
@@ -348,7 +338,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Mariage',
-        image: 'https://i.ibb.co/4RHy3wJb/1000060930.jpg',
+        image: '/images/gallery/g3.jpg',
         caption: 'Arrangements floraux majestueux dans les tons violet et blanc pur.',
       },
       {
@@ -358,7 +348,7 @@ export const fr: Translations = {
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Gala Corporate',
-        image: 'https://i.ibb.co/JWcPrQdv/1000060995.jpg',
+        image: '/images/gallery/g4.jpg',
         caption: 'Excellence technique et gestion protocolaire pour réceptions d’élite.',
       },
       {
@@ -368,28 +358,8 @@ export const fr: Translations = {
         location: 'Bafoussam, Cameroun',
         year: '2025',
         guests: 'Nos Cadeaux',
-        image: 'https://i.ibb.co/MxZQXxML/1000059485.jpg',
+        image: '/images/gallery/g5.jpg',
         caption: 'Cadeaux exclusifs issus de la boutique Tesa Gancia.',
-      },
-      {
-        id: 'g6',
-        title: 'Décor Signature',
-        category: 'decoration',
-        location: 'Douala, Cameroun',
-        year: '2025',
-        guests: 'Dîner de Gala',
-        image: 'https://i.ibb.co/nsXWr7gP/1000059488.jpg',
-        caption: 'Design événementiel lumineux et signature scénographique raffinée.',
-      },
-      {
-        id: 'g7',
-        title: 'Détails Exquis',
-        category: 'decoration',
-        location: 'Yaoundé, Cameroun',
-        year: '2025',
-        guests: 'Réception',
-        image: 'https://i.ibb.co/HT6PDHnS/1000061215.jpg',
-        caption: 'Chaque détail est orchestré avec une rigueur absolue.',
       },
       {
         id: 'g8',
@@ -398,7 +368,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Événement',
-        image: 'https://i.ibb.co/9kJ86rBR/1000060890.jpg',
+        image: '/images/gallery/g8.jpg',
         caption: 'Créer des moments précieux dans une atmosphère raffinée.',
       },
       {
@@ -408,7 +378,7 @@ export const fr: Translations = {
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Nos Cadeaux',
-        image: 'https://i.ibb.co/zV4CR2wT/1000061016.jpg',
+        image: '/images/gallery/g9.jpg',
         caption: 'Trésors personnalisés pour ceux qui comptent vraiment.',
       },
       {
@@ -418,7 +388,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Réception',
-        image: 'https://i.ibb.co/4Z5K3vhM/1000060992.jpg',
+        image: '/images/gallery/g10.jpg',
         caption: 'Brigades culinaires raffinées et excellence du service.',
       },
       {
@@ -428,7 +398,7 @@ export const fr: Translations = {
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Scénographie',
-        image: 'https://i.ibb.co/ZRbfV5PT/1000060974.jpg',
+        image: '/images/gallery/g11.jpg',
         caption: 'Ambiances violettes douces et design contemporain.',
       },
       {
@@ -438,7 +408,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Entrée de Gala',
-        image: 'https://i.ibb.co/gbW71gnt/1000061245.jpg',
+        image: '/images/gallery/g12.jpg',
         caption: 'Une vision Haute Couture de l’hospitalité.',
       },
       {
@@ -448,7 +418,7 @@ export const fr: Translations = {
         location: 'Bafoussam, Cameroun',
         year: '2025',
         guests: 'Protocole',
-        image: 'https://i.ibb.co/2Y6W27D7/1000060875.jpg',
+        image: '/images/gallery/g13.jpg',
         caption: 'Équipes d’accueil d’élite pour le protocole et les VIP.',
       },
       {
@@ -458,7 +428,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Nos Cadeaux',
-        image: 'https://i.ibb.co/jPjQH2YQ/1000060959.jpg',
+        image: '/images/gallery/g14.jpg',
         caption: 'Emballages artisanaux et présentation soignée.',
       },
       {
@@ -468,7 +438,7 @@ export const fr: Translations = {
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Dîner de Réception',
-        image: 'https://i.ibb.co/C5b2qjYW/1000060998.jpg',
+        image: '/images/gallery/g15.jpg',
         caption: 'Design de table sur-mesure et détails raffinés.',
       },
       {
@@ -478,7 +448,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Fleurs',
-        image: 'https://i.ibb.co/B2RDFrS4/1000061125.jpg',
+        image: '/images/gallery/g16.jpg',
         caption: 'Fleurs fraîches et structures florales artistiques.',
       },
       {
@@ -488,7 +458,7 @@ export const fr: Translations = {
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Nos Cadeaux',
-        image: 'https://i.ibb.co/0pbzfBF5/1000061127.jpg',
+        image: '/images/gallery/g17.jpg',
         caption: 'Bouquets d’argent sur-mesure et surprises florales.',
       },
       {
@@ -498,7 +468,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Corporate',
-        image: 'https://i.ibb.co/TDJDKSTb/1000061260.jpg',
+        image: '/images/gallery/g18.jpg',
         caption: 'Exécution parfaite d’événements d’entreprise prestigieux.',
       },
       {
@@ -508,7 +478,7 @@ export const fr: Translations = {
         location: 'Bafoussam, Cameroun',
         year: '2025',
         guests: 'Nos Cadeaux',
-        image: 'https://i.ibb.co/1fSmxyYN/1000061257.jpg',
+        image: '/images/gallery/g19.jpg',
         caption: 'Accessoires personnalisés de la collection Tesa Gancia.',
       },
       {
@@ -518,7 +488,7 @@ export const fr: Translations = {
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Décor de Gala',
-        image: 'https://i.ibb.co/PsdtGMqQ/1000061191.jpg',
+        image: '/images/gallery/g20.jpg',
         caption: 'Transformer les espaces en environnements féeriques.',
       },
       {
@@ -528,7 +498,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Mariage',
-        image: 'https://i.ibb.co/KjjPtpFw/1000061212.jpg',
+        image: '/images/gallery/g21.jpg',
         caption: 'Centres de table majestueux pour des mariages inoubliables.',
       },
       {
@@ -538,7 +508,7 @@ export const fr: Translations = {
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Nos Cadeaux',
-        image: 'https://i.ibb.co/Z1Yxjht4/1000061134.jpg',
+        image: '/images/gallery/g22.jpg',
         caption: 'Cadeaux premium conçus pour marquer les esprits.',
       },
       {
@@ -548,7 +518,7 @@ export const fr: Translations = {
         location: 'Douala, Cameroun',
         year: '2025',
         guests: 'Gala Corporate',
-        image: 'https://i.ibb.co/bM7FLVtT/1000061031.jpg',
+        image: '/images/gallery/g23.jpg',
         caption: 'Allier élégance contemporaine et prestige africain.',
       },
       {
@@ -558,7 +528,7 @@ export const fr: Translations = {
         location: 'Yaoundé, Cameroun',
         year: '2025',
         guests: 'Événement Spécial',
-        image: 'https://i.ibb.co/99h7gwK3/1000061230.jpg',
+        image: '/images/gallery/g24.jpg',
         caption: 'Façonner le futur de l’hospitalité au Cameroun.',
       },
       {
@@ -568,7 +538,7 @@ export const fr: Translations = {
         location: 'Bafoussam, Cameroun',
         year: '2025',
         guests: 'Anniversaire',
-        image: 'https://i.ibb.co/Lh2qFyjL/1000061254.jpg',
+        image: '/images/gallery/g25.jpg',
         caption: 'Scénographie unique adaptée à votre vision spécifique.',
       },
     ],

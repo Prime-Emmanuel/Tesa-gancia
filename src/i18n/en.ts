@@ -36,7 +36,7 @@ export const en: Translations = {
       'Every decor is crafted as a bespoke masterpiece. We seamlessly blend Cameroonian cultural heritage with bold contemporary design, executing every single detail with uncompromising rigor.',
     stats: [
       { value: 450, suffix: '+', label: 'Exceptional Events Celebrated' },
-      { value: 12, suffix: '+', label: 'Years of Mastery & Excellence' },
+      { value: 6, suffix: '+', label: 'Years of Experience & Mastery' },
       { value: 3, suffix: '', label: 'Private Showrooms in Cameroon' },
       { value: 99, suffix: '%', label: 'Happy & Enchanted Clients' },
     ],
@@ -322,23 +322,13 @@ export const en: Translations = {
     ],
     items: [
       {
-        id: 'g1',
-        title: 'Bespoke Celebration Setup',
-        category: 'decoration',
-        location: 'Douala, Cameroon',
-        year: '2025',
-        guests: 'Private Event',
-        image: 'https://i.ibb.co/PSSKJ4v/1000061221.jpg',
-        caption: 'Elegant event scenography featuring our signature violet and white color palette.',
-      },
-      {
         id: 'g2',
         title: 'Luxury Gift Boutique',
         category: 'gifts',
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Our Gifts',
-        image: 'https://i.ibb.co/LdzXQbf4/1000061236.jpg',
+        image: '/images/gallery/g2.jpg',
         caption: 'Bespoke personalized gift boxes for premium celebrations.',
       },
       {
@@ -348,7 +338,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Wedding Decor',
-        image: 'https://i.ibb.co/4RHy3wJb/1000060930.jpg',
+        image: '/images/gallery/g3.jpg',
         caption: 'Majestic floral arrangements in shades of violet and pure white.',
       },
       {
@@ -358,7 +348,7 @@ export const en: Translations = {
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Corporate Gala',
-        image: 'https://i.ibb.co/JWcPrQdv/1000060995.jpg',
+        image: '/images/gallery/g4.jpg',
         caption: 'Technical excellence and protocol management for elite receptions.',
       },
       {
@@ -368,28 +358,8 @@ export const en: Translations = {
         location: 'Bafoussam, Cameroon',
         year: '2025',
         guests: 'Our Gifts',
-        image: 'https://i.ibb.co/MxZQXxML/1000059485.jpg',
+        image: '/images/gallery/g5.jpg',
         caption: 'Exclusive gifts from the Tesa Gancia boutique.',
-      },
-      {
-        id: 'g6',
-        title: 'Signature Decor',
-        category: 'decoration',
-        location: 'Douala, Cameroon',
-        year: '2025',
-        guests: 'Gala Dinner',
-        image: 'https://i.ibb.co/nsXWr7gP/1000059488.jpg',
-        caption: 'Luminous event styling and scenographic signature.',
-      },
-      {
-        id: 'g7',
-        title: 'Exquisite Details',
-        category: 'decoration',
-        location: 'Yaoundé, Cameroon',
-        year: '2025',
-        guests: 'Reception',
-        image: 'https://i.ibb.co/HT6PDHnS/1000061215.jpg',
-        caption: 'Every detail is crafted with uncompromising rigor.',
       },
       {
         id: 'g8',
@@ -398,7 +368,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Milestone',
-        image: 'https://i.ibb.co/9kJ86rBR/1000060890.jpg',
+        image: '/images/gallery/g8.jpg',
         caption: 'Creating precious moments in a refined atmosphere.',
       },
       {
@@ -408,7 +378,7 @@ export const en: Translations = {
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Our Gifts',
-        image: 'https://i.ibb.co/zV4CR2wT/1000061016.jpg',
+        image: '/images/gallery/g9.jpg',
         caption: 'Personalized treasures for those who matter most.',
       },
       {
@@ -418,7 +388,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Reception',
-        image: 'https://i.ibb.co/4Z5K3vhM/1000060992.jpg',
+        image: '/images/gallery/g10.jpg',
         caption: 'Refined culinary brigades and service excellence.',
       },
       {
@@ -428,7 +398,7 @@ export const en: Translations = {
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Event Scenography',
-        image: 'https://i.ibb.co/ZRbfV5PT/1000060974.jpg',
+        image: '/images/gallery/g11.jpg',
         caption: 'Soft violet lighting and contemporary design.',
       },
       {
@@ -438,7 +408,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Gala Entrance',
-        image: 'https://i.ibb.co/gbW71gnt/1000061245.jpg',
+        image: '/images/gallery/g12.jpg',
         caption: 'A Haute Couture vision of hospitality.',
       },
       {
@@ -448,7 +418,7 @@ export const en: Translations = {
         location: 'Bafoussam, Cameroon',
         year: '2025',
         guests: 'Protocol',
-        image: 'https://i.ibb.co/2Y6W27D7/1000060875.jpg',
+        image: '/images/gallery/g13.jpg',
         caption: 'Elite hospitality teams for protocol and VIP care.',
       },
       {
@@ -458,7 +428,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Our Gifts',
-        image: 'https://i.ibb.co/jPjQH2YQ/1000060959.jpg',
+        image: '/images/gallery/g14.jpg',
         caption: 'Artisanal wrapping and presentation for boutique gifts.',
       },
       {
@@ -468,7 +438,7 @@ export const en: Translations = {
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Dinner Party',
-        image: 'https://i.ibb.co/C5b2qjYW/1000060998.jpg',
+        image: '/images/gallery/g15.jpg',
         caption: 'Bespoke table styling and fine reception details.',
       },
       {
@@ -478,7 +448,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Event Florals',
-        image: 'https://i.ibb.co/B2RDFrS4/1000061125.jpg',
+        image: '/images/gallery/g16.jpg',
         caption: 'Fresh blooms and artistic floral structures.',
       },
       {
@@ -488,7 +458,7 @@ export const en: Translations = {
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Our Gifts',
-        image: 'https://i.ibb.co/0pbzfBF5/1000061127.jpg',
+        image: '/images/gallery/g17.jpg',
         caption: 'Bespoke money bouquets and floral surprises.',
       },
       {
@@ -498,7 +468,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Corporate',
-        image: 'https://i.ibb.co/TDJDKSTb/1000061260.jpg',
+        image: '/images/gallery/g18.jpg',
         caption: 'Flawless execution of prestigious corporate events.',
       },
       {
@@ -508,7 +478,7 @@ export const en: Translations = {
         location: 'Bafoussam, Cameroon',
         year: '2025',
         guests: 'Our Gifts',
-        image: 'https://i.ibb.co/1fSmxyYN/1000061257.jpg',
+        image: '/images/gallery/g19.jpg',
         caption: 'Personalized accessories from the Tesa Gancia collection.',
       },
       {
@@ -518,7 +488,7 @@ export const en: Translations = {
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Gala Decor',
-        image: 'https://i.ibb.co/PsdtGMqQ/1000061191.jpg',
+        image: '/images/gallery/g20.jpg',
         caption: 'Transforming venues into enchanted environments.',
       },
       {
@@ -528,7 +498,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Wedding',
-        image: 'https://i.ibb.co/KjjPtpFw/1000061212.jpg',
+        image: '/images/gallery/g21.jpg',
         caption: 'Majestic centerpieces for unforgettable weddings.',
       },
       {
@@ -538,7 +508,7 @@ export const en: Translations = {
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Our Gifts',
-        image: 'https://i.ibb.co/Z1Yxjht4/1000061134.jpg',
+        image: '/images/gallery/g22.jpg',
         caption: 'Premium gifts designed to make an indelible impression.',
       },
       {
@@ -548,7 +518,7 @@ export const en: Translations = {
         location: 'Douala, Cameroon',
         year: '2025',
         guests: 'Corporate Gala',
-        image: 'https://i.ibb.co/bM7FLVtT/1000061031.jpg',
+        image: '/images/gallery/g23.jpg',
         caption: 'Merging contemporary elegance with African prestige.',
       },
       {
@@ -558,7 +528,7 @@ export const en: Translations = {
         location: 'Yaoundé, Cameroon',
         year: '2025',
         guests: 'Special Event',
-        image: 'https://i.ibb.co/99h7gwK3/1000061230.jpg',
+        image: '/images/gallery/g24.jpg',
         caption: 'Crafting the future of hospitality in Cameroon.',
       },
       {
@@ -568,7 +538,7 @@ export const en: Translations = {
         location: 'Bafoussam, Cameroon',
         year: '2025',
         guests: 'Anniversary',
-        image: 'https://i.ibb.co/Lh2qFyjL/1000061254.jpg',
+        image: '/images/gallery/g25.jpg',
         caption: 'Unique scenography tailored to your specific vision.',
       },
     ],
