@@ -14,17 +14,10 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
     const element = ref.current;
     if (!element) return;
 
-    // Check for prefers-reduced-motion
-    if (
-      typeof window !== 'undefined' &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    ) {
-      element.classList.add('is-revealed');
-      return;
-    }
+    // Immediately mark as revealed to guarantee zero blank spaces
+    element.classList.add('is-revealed');
 
     if (!('IntersectionObserver' in window)) {
-      element.classList.add('is-revealed');
       return;
     }
 
@@ -33,11 +26,10 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-revealed');
-            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold, rootMargin }
+      { threshold: 0.01, rootMargin: '50px' }
     );
 
     observer.observe(element);
@@ -45,7 +37,7 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
     return () => {
       observer.disconnect();
     };
-  }, [threshold, rootMargin]);
+  }, []);
 
   return ref;
 }

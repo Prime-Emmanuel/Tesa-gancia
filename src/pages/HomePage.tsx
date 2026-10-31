@@ -55,8 +55,8 @@ export const HomePage: React.FC = () => {
             {t.hero.titleLine2}
           </h1>
 
-          {/* 2-line Subline in refined violet-slate */}
-          <p className="font-sans text-sm sm:text-base md:text-lg text-[#523B68] max-w-2xl leading-relaxed mb-6 sm:mb-8 whitespace-pre-line font-normal">
+          {/* 2-line Subline in refined high-contrast violet */}
+          <p className="font-sans text-sm sm:text-base md:text-lg text-[#32174D] max-w-2xl leading-relaxed mb-6 sm:mb-8 whitespace-pre-line font-medium">
             {t.hero.subline}
           </p>
 
@@ -92,11 +92,11 @@ export const HomePage: React.FC = () => {
             {/* Scroll Indicator in Violet */}
             <a
               href="#editorial"
-              className="inline-flex items-center gap-2 text-[10px] sm:text-xs uppercase tracking-[0.18em] text-[#6C5B82] hover:text-[#7B2CBF] transition-colors font-medium"
+              className="inline-flex items-center gap-2 text-[10px] sm:text-xs uppercase tracking-[0.18em] text-[#32174D] hover:text-[#7B2CBF] transition-colors font-semibold"
             >
               <span className="hidden sm:inline">{t.hero.scrollIndicator}</span>
               <div className="w-4 h-7 border-2 border-[#7B2CBF] rounded-full flex items-start justify-center p-1">
-                <div className="w-1 h-1.5 bg-[#7B2CBF] rounded-full" />
+                <div className="w-1.5 h-2 bg-[#7B2CBF] rounded-full animate-scroll-bounce" />
               </div>
             </a>
           </div>
@@ -109,7 +109,7 @@ export const HomePage: React.FC = () => {
       <section
         id="editorial"
         ref={editorialRef}
-        className="section-padding bg-white text-[#220A3D] relative reveal-item content-auto"
+        className="section-padding bg-white text-[#220A3D] relative"
       >
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -126,9 +126,9 @@ export const HomePage: React.FC = () => {
                 </span>
               </h2>
 
-              <div className="space-y-4 text-base sm:text-lg text-[#3C195E] font-serif leading-relaxed">
+              <div className="space-y-4 text-base sm:text-lg text-[#260C45] font-serif leading-relaxed">
                 <p>{t.editorial.paragraph1}</p>
-                <p className="text-sm sm:text-base font-sans text-[#6C5B82] leading-relaxed">
+                <p className="text-sm sm:text-base font-sans text-[#4A3563] leading-relaxed">
                   {t.editorial.paragraph2}
                 </p>
               </div>
@@ -178,7 +178,7 @@ export const HomePage: React.FC = () => {
           ========================================================================= */}
       <section
         ref={servicesRef}
-        className="section-padding bg-[#FAF5FE] text-[#220A3D] relative reveal-item content-auto border-y border-[#EADBFA]"
+        className="section-padding bg-[#FAF5FE] text-[#220A3D] relative border-y border-[#EADBFA]"
       >
         <Container>
           <div className="text-center mb-16">
@@ -210,7 +210,7 @@ export const HomePage: React.FC = () => {
           ========================================================================= */}
       <section
         ref={galleryRef}
-        className="section-padding bg-white text-[#220A3D] relative reveal-item content-auto"
+        className="section-padding bg-white text-[#220A3D] relative"
       >
         <Container>
           <div className="text-center mb-12">
@@ -242,7 +242,7 @@ export const HomePage: React.FC = () => {
           ========================================================================= */}
       <section
         ref={processRef}
-        className="section-padding bg-[#FAF5FE] text-[#220A3D] relative reveal-item content-auto border-y border-[#EADBFA]"
+        className="section-padding bg-[#FAF5FE] text-[#220A3D] relative border-y border-[#EADBFA]"
       >
         <Container>
           <div className="text-center mb-12">
@@ -267,7 +267,7 @@ export const HomePage: React.FC = () => {
           ========================================================================= */}
       <section
         ref={locationsRef}
-        className="section-padding bg-white text-[#220A3D] relative reveal-item content-auto"
+        className="section-padding bg-white text-[#220A3D] relative"
       >
         <Container>
           <div className="text-center mb-16">
@@ -294,7 +294,7 @@ export const HomePage: React.FC = () => {
       <section
         id="quote-section"
         ref={quoteRef}
-        className="section-padding bg-[#FAF5FE] text-[#220A3D] relative reveal-item border-t border-[#EADBFA]"
+        className="section-padding bg-[#FAF5FE] text-[#220A3D] relative border-t border-[#EADBFA]"
       >
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">

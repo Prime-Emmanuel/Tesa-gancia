@@ -5,7 +5,8 @@ import { useLanguage } from '../../i18n/LanguageContext';
 export const Footer: React.FC = () => {
   const { t, language } = useLanguage();
   const currentYear = new Date().getFullYear();
-  const BRAND_LOGO_URL = 'https://i.ibb.co/9HC7vD2h/IMG-20261026-WA0097.jpg';
+  const BRAND_LOGO_PRIMARY = '/logo.jpg';
+  const BRAND_LOGO_FALLBACK = 'https://i.ibb.co/9HC7vD2h/IMG-20261026-WA0097.jpg';
 
   return (
     <footer className="bg-[#1C0833] border-t border-[#3E1570] text-white relative overflow-hidden">
@@ -20,9 +21,16 @@ export const Footer: React.FC = () => {
             <Link to="/" className="flex items-center gap-3 mb-5 group">
               <div className="h-12 w-auto flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                 <img
-                  src={BRAND_LOGO_URL}
+                  src={BRAND_LOGO_PRIMARY}
                   alt="Logo Tesa Gancia"
                   className="h-12 w-auto max-w-[140px] object-contain rounded-md"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src !== BRAND_LOGO_FALLBACK) {
+                      target.src = BRAND_LOGO_FALLBACK;
+                    }
+                  }}
                 />
               </div>
             </Link>

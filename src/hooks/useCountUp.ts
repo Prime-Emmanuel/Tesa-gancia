@@ -28,16 +28,24 @@ export function useCountUp(endValue: number, duration = 1800): { count: number; 
       return;
     }
 
+    // Safety fallback: if observer hasn't fired within 1s, display end value
+    const safetyTimer = setTimeout(() => {
+      if (!hasAnimated.current) {
+        hasAnimated.current = true;
+        setCount(endValue);
+      }
+    }, 1000);
+
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting && !hasAnimated.current) {
           hasAnimated.current = true;
+          clearTimeout(safetyTimer);
 
           const startTime = performance.now();
           const step = (currentTime: number) => {
             const progress = Math.min((currentTime - startTime) / duration, 1);
-            // Ease out cubic
             const easeOutProgress = 1 - Math.pow(1 - progress, 3);
             setCount(Math.floor(easeOutProgress * endValue));
 
@@ -52,12 +60,13 @@ export function useCountUp(endValue: number, duration = 1800): { count: number; 
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.05 }
     );
 
     observer.observe(element);
 
     return () => {
+      clearTimeout(safetyTimer);
       observer.disconnect();
     };
   }, [endValue, duration]);

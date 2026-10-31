@@ -115,17 +115,16 @@ h1, h2, h3, h4 {
   border-color: #EADBFA;
 }
 
-/* Scroll reveal classes with graceful fallback */
+/* Smooth scroll reveal: elements default to visible so content is NEVER hidden */
 .reveal-item {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.65s var(--ease-luxury), transform 0.65s var(--ease-luxury);
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.6s var(--ease-luxury), transform 0.6s var(--ease-luxury);
 }
 
 .reveal-item.is-revealed {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* Keyframe for subtle scroll bounce in violet */
@@ -159,12 +158,6 @@ h1, h2, h3, h4 {
     transform: none !important;
     transition: none !important;
   }
-}
-
-/* Content visibility for below-the-fold optimization */
-.content-auto {
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 700px;
 }
 
 /* Clean WhatsApp pulse */

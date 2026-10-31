@@ -25,7 +25,7 @@ export const ProcessTimeline: React.FC = () => {
                 {step.title}
               </h4>
 
-              <p className="text-xs text-[#6C5B82] font-sans leading-relaxed">
+              <p className="text-xs text-[#4F3D66] font-sans leading-relaxed">
                 {step.description}
               </p>
             </div>
@@ -51,7 +51,7 @@ export const ProcessTimeline: React.FC = () => {
               </h4>
             </div>
 
-            <p className="text-xs sm:text-sm text-[#6C5B82] font-sans leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#4F3D66] font-sans leading-relaxed">
               {step.description}
             </p>
           </div>

@@ -28,7 +28,8 @@ export const Header: React.FC = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const BRAND_LOGO_URL = 'https://i.ibb.co/9HC7vD2h/IMG-20261026-WA0097.jpg';
+  const BRAND_LOGO_PRIMARY = '/logo.jpg';
+  const BRAND_LOGO_FALLBACK = 'https://i.ibb.co/9HC7vD2h/IMG-20261026-WA0097.jpg';
 
   return (
     <>
@@ -44,24 +45,31 @@ export const Header: React.FC = () => {
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
             ? 'bg-white/95 backdrop-blur-md border-b border-[#EADBFA] py-2.5 shadow-sm'
-            : 'bg-white/80 backdrop-blur-sm py-4 border-b border-[#EADBFA]/50'
+            : 'bg-white/90 backdrop-blur-sm py-3.5 border-b border-[#EADBFA]/60'
         }`}
       >
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Brand Logo ONLY (no text, no name near it or under it, as strictly requested) */}
+          {/* Brand Logo ONLY (no text, no name near it or under it, exactly as requested) */}
           <Link
             to="/"
             onClick={handleLinkClick}
             className="flex items-center group cursor-pointer focus-visible:outline-offset-4"
             aria-label="Tesa Gancia"
           >
-            <div className="h-10 sm:h-12 w-auto flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <div className="h-11 sm:h-13 w-auto flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <img
-                src={BRAND_LOGO_URL}
+                src={BRAND_LOGO_PRIMARY}
                 alt="Logo Tesa Gancia"
-                className="h-10 sm:h-12 w-auto max-w-[120px] sm:max-w-[140px] object-contain rounded-md"
+                className="h-11 sm:h-13 w-auto max-w-[140px] sm:max-w-[160px] object-contain rounded-md"
                 loading="eager"
                 decoding="sync"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== BRAND_LOGO_FALLBACK) {
+                    target.src = BRAND_LOGO_FALLBACK;
+                  }
+                }}
               />
             </div>
           </Link>
@@ -175,9 +183,16 @@ export const Header: React.FC = () => {
               className="flex items-center"
             >
               <img
-                src={BRAND_LOGO_URL}
+                src={BRAND_LOGO_PRIMARY}
                 alt="Logo Tesa Gancia"
-                className="h-11 w-auto max-w-[120px] object-contain rounded-md"
+                className="h-11 w-auto max-w-[130px] object-contain rounded-md"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== BRAND_LOGO_FALLBACK) {
+                    target.src = BRAND_LOGO_FALLBACK;
+                  }
+                }}
               />
             </Link>
 

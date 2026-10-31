@@ -227,6 +227,7 @@ export const MasonryGallery: React.FC<MasonryGalleryProps> = ({ limit }) => {
               <img
                 src={currentItem.image}
                 alt={currentItem.title}
+                referrerPolicy="no-referrer"
                 className="max-h-[70vh] w-auto object-contain mx-auto"
               />
             </div>
