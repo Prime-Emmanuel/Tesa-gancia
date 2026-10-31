@@ -1,0 +1,6 @@
+{
+  "name": "Tesa Gancia | Haute Scénographie & Événements de Prestige",
+  "description": "Maison événementielle d'exception au Cameroun. Conception de mariages de luxe, galas corporatifs, scénographie florale, traiteur d'art et régie technique à Douala, Yaoundé et Bafoussam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

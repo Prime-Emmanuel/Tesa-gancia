@@ -1,0 +1,21 @@
+{
+  "name": "Tesa Gancia | Haute Scénographie & Événements",
+  "short_name": "Tesa Gancia",
+  "description": "Maison événementielle de prestige au Cameroun (Douala, Yaoundé, Bafoussam)",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2D124D",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/9HC7vD2h/IMG-20261026-WA0097.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://i.ibb.co/9HC7vD2h/IMG-20261026-WA0097.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

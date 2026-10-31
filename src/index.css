@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  /* Pure White & Violet Palette */
+  --color-violet-950: #1C0833;
+  --color-violet-900: #260C45;
+  --color-violet-850: #311059;
+  --color-violet-800: #3E1570;
+  --color-violet-700: #521C94;
+  --color-violet-600: #6B26C2;
+  --color-violet-500: #7B2CBF;
+  --color-violet-400: #9D4EDD;
+  --color-violet-300: #C77DFF;
+  --color-violet-200: #E0AAFF;
+  --color-violet-100: #EEDBFA;
+  --color-violet-50: #F7EEFC;
+  --color-violet-light: #FAF5FE;
+
+  /* Pure Whites & Light Neutrals */
+  --color-pure-white: #FFFFFF;
+  --color-surface-white: #FFFFFF;
+  --color-surface-subtle: #FAF7FD;
+  --color-text-dark: #220A3D;
+  --color-text-muted: #6C5B82;
+  --color-border-subtle: #EADBFA;
+  --color-border-violet: #8B35D4;
+}
+
+:root {
+  --color-violet-deep: #260C45;
+  --color-violet-primary: #7B2CBF;
+  --color-violet-accent: #9D4EDD;
+  --color-white: #FFFFFF;
+  --color-violet-bg: #FAF5FE;
+  --violet-gradient: linear-gradient(135deg, #7B2CBF 0%, #9D4EDD 50%, #6823A4 100%);
+  --violet-royal-gradient: linear-gradient(135deg, #260C45 0%, #4A1584 100%);
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Base resets & typography */
+html {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: #220A3D;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom focus ring in vibrant violet */
+:focus-visible {
+  outline: 2px solid #7B2CBF;
+  outline-offset: 3px;
+}
+
+/* Fluid Typography helpers */
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.text-fluid-h1 {
+  font-size: clamp(2.6rem, 7vw, 5.8rem);
+  line-height: 1.05;
+}
+
+.text-fluid-h2 {
+  font-size: clamp(2rem, 4.5vw, 3.75rem);
+  line-height: 1.15;
+}
+
+.text-fluid-h3 {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  line-height: 1.25;
+}
+
+.text-fluid-body {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 450;
+}
+
+/* Ensure all text is clear and professional */
+p {
+  font-weight: 450;
+  letter-spacing: -0.011em;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+}
+
+.section-padding {
+  padding-top: clamp(5rem, 9vw, 8.5rem);
+  padding-bottom: clamp(5rem, 9vw, 8.5rem);
+}
+
+/* Violet gradient text */
+.text-violet-gradient {
+  background: linear-gradient(135deg, #7B2CBF 0%, #9D4EDD 50%, #521C94 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-violet-royal {
+  background: linear-gradient(135deg, #260C45 0%, #521C94 60%, #7B2CBF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle violet border accent */
+.border-violet-subtle {
+  border-color: #EADBFA;
+}
+
+/* Scroll reveal classes with graceful fallback */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s var(--ease-luxury), transform 0.65s var(--ease-luxury);
+  will-change: opacity, transform;
+}
+
+.reveal-item.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframe for subtle scroll bounce in violet */
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 0.3;
+  }
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 2.2s infinite ease-in-out;
+}
+
+/* When reduced motion is preferred or if JS fails */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-item {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Content visibility for below-the-fold optimization */
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}
+
+/* Clean WhatsApp pulse */
+@keyframes luxury-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.pulse-once {
+  animation: luxury-pulse 2.4s ease-out 1s 2 forwards;
+}
+
+/* Scrollbar reset */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
